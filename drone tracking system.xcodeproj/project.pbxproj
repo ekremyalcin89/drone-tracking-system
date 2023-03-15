@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		E109F9B529B5F047004D8949 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E109F9B429B5F047004D8949 /* AppDelegate.swift */; };
 		E109F9B729B5F047004D8949 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E109F9B629B5F047004D8949 /* SceneDelegate.swift */; };
-		E109F9B929B5F047004D8949 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E109F9B829B5F047004D8949 /* ViewController.swift */; };
+		E109F9B929B5F047004D8949 /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E109F9B829B5F047004D8949 /* SigninVC.swift */; };
 		E109F9BC29B5F047004D8949 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E109F9BA29B5F047004D8949 /* Main.storyboard */; };
 		E109F9BE29B5F04A004D8949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E109F9BD29B5F04A004D8949 /* Assets.xcassets */; };
 		E109F9C129B5F04A004D8949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E109F9BF29B5F04A004D8949 /* LaunchScreen.storyboard */; };
+		E1FD670E29C1B4F80096BE3C /* DroneListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD670D29C1B4F80096BE3C /* DroneListVC.swift */; };
+		E1FD671029C1B53A0096BE3C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD670F29C1B53A0096BE3C /* MapVC.swift */; };
+		E1FD671229C1B5E10096BE3C /* InfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD671129C1B5E10096BE3C /* InfoVC.swift */; };
+		E1FD671429C1B5FE0096BE3C /* DestinationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD671329C1B5FE0096BE3C /* DestinationVC.swift */; };
+		E1FD671629C1B6160096BE3C /* ServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FD671529C1B6150096BE3C /* ServiceVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E109F9B129B5F047004D8949 /* drone tracking system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "drone tracking system.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E109F9B429B5F047004D8949 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E109F9B629B5F047004D8949 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E109F9B829B5F047004D8949 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E109F9B829B5F047004D8949 /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		E109F9BB29B5F047004D8949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E109F9BD29B5F04A004D8949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E109F9C029B5F04A004D8949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E109F9C229B5F04A004D8949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1FD670D29C1B4F80096BE3C /* DroneListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneListVC.swift; sourceTree = "<group>"; };
+		E1FD670F29C1B53A0096BE3C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		E1FD671129C1B5E10096BE3C /* InfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoVC.swift; sourceTree = "<group>"; };
+		E1FD671329C1B5FE0096BE3C /* DestinationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationVC.swift; sourceTree = "<group>"; };
+		E1FD671529C1B6150096BE3C /* ServiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,12 @@
 			children = (
 				E109F9B429B5F047004D8949 /* AppDelegate.swift */,
 				E109F9B629B5F047004D8949 /* SceneDelegate.swift */,
-				E109F9B829B5F047004D8949 /* ViewController.swift */,
+				E109F9B829B5F047004D8949 /* SigninVC.swift */,
+				E1FD670D29C1B4F80096BE3C /* DroneListVC.swift */,
+				E1FD670F29C1B53A0096BE3C /* MapVC.swift */,
+				E1FD671129C1B5E10096BE3C /* InfoVC.swift */,
+				E1FD671329C1B5FE0096BE3C /* DestinationVC.swift */,
+				E1FD671529C1B6150096BE3C /* ServiceVC.swift */,
 				E109F9BA29B5F047004D8949 /* Main.storyboard */,
 				E109F9BD29B5F04A004D8949 /* Assets.xcassets */,
 				E109F9BF29B5F04A004D8949 /* LaunchScreen.storyboard */,
@@ -138,9 +153,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E109F9B929B5F047004D8949 /* ViewController.swift in Sources */,
+				E1FD671429C1B5FE0096BE3C /* DestinationVC.swift in Sources */,
+				E1FD671029C1B53A0096BE3C /* MapVC.swift in Sources */,
+				E109F9B929B5F047004D8949 /* SigninVC.swift in Sources */,
 				E109F9B529B5F047004D8949 /* AppDelegate.swift in Sources */,
+				E1FD671629C1B6160096BE3C /* ServiceVC.swift in Sources */,
 				E109F9B729B5F047004D8949 /* SceneDelegate.swift in Sources */,
+				E1FD671229C1B5E10096BE3C /* InfoVC.swift in Sources */,
+				E1FD670E29C1B4F80096BE3C /* DroneListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
