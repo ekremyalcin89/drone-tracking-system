@@ -2,7 +2,7 @@
 //  ListViewController.swift
 //  drone tracking system
 //
-//  Created by Tayyip on 15.03.2023.
+//  Created by Ekrem on 15.03.2023.
 //
 
 import UIKit
