@@ -27,7 +27,7 @@ class ListViewController: UIViewController {
     
     @objc func addDroneClicked() {
         //segue to drone tracking map
-        performSegue(withIdentifier: "toAddNewDroneVC", sender: nil)
+        performSegue(withIdentifier: "toMapVC", sender: nil)
     }
 
 

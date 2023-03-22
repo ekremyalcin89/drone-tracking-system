@@ -10,16 +10,20 @@ import MapKit
 
 class MapVC: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    
+    
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tabBarController?.tabBarItem.title = "add new drone"
         
         
-        
-        
-        
-    }
+        }
     
-
-
+   
+    
 }

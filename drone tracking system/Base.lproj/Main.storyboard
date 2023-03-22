@@ -130,50 +130,38 @@
                     <navigationItem key="navigationItem" id="Cad-v4-hXe"/>
                     <connections>
                         <outlet property="droneList" destination="wnG-ce-5UG" id="G1M-f8-fVK"/>
-                        <segue destination="kmC-Wa-XVk" kind="show" identifier="toAddNewDroneVC" id="0BN-Wb-GwP"/>
-                        <segue destination="eNx-ep-kTh" kind="show" identifier="toMapVC" id="Sl5-3Q-kmn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IwK-Nf-bXX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="582" y="-46"/>
         </scene>
-        <!--View Controller-->
+        <!--MapVC-->
         <scene sceneID="rSI-Fk-TLh">
             <objects>
-                <viewController id="eNx-ep-kTh" sceneMemberID="viewController">
+                <viewController id="eNx-ep-kTh" customClass="MapVC" customModule="drone_tracking_system" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Xa3-TS-neQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mnr-yW-PVv">
-                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
-                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFg-ku-YSt">
-                                <rect key="frame" x="-1" y="759" width="388" height="48"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="info" image="info.circle" catalog="system" selectedImage="info.circle.fill" id="UP6-Cz-ewq"/>
-                                    <tabBarItem title="destinations" image="road.lanes" catalog="system" id="58i-ao-N6c"/>
-                                    <tabBarItem title="service" image="wrench.and.screwdriver.fill" catalog="system" id="EW8-ZZ-Gam"/>
-                                </items>
-                            </tabBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IbH-ys-jQ7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="centerX" secondItem="Xa3-TS-neQ" secondAttribute="centerX" id="3GM-bw-9nc"/>
-                            <constraint firstItem="IbH-ys-jQ7" firstAttribute="trailing" secondItem="WFg-ku-YSt" secondAttribute="trailing" constant="3" id="64u-8P-Kax"/>
-                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="leading" secondItem="IbH-ys-jQ7" secondAttribute="leading" id="D0E-Ma-uJk"/>
-                            <constraint firstItem="IbH-ys-jQ7" firstAttribute="bottom" secondItem="Mnr-yW-PVv" secondAttribute="bottom" constant="49" id="H15-YR-9Ux"/>
-                            <constraint firstItem="WFg-ku-YSt" firstAttribute="leading" secondItem="Xa3-TS-neQ" secondAttribute="leadingMargin" constant="-17" id="O50-95-6gY"/>
-                            <constraint firstItem="WFg-ku-YSt" firstAttribute="top" secondItem="IbH-ys-jQ7" secondAttribute="top" constant="668" id="s9Q-er-1kf"/>
-                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="top" secondItem="IbH-ys-jQ7" secondAttribute="top" id="w7a-CJ-fO2"/>
+                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="centerX" secondItem="Xa3-TS-neQ" secondAttribute="centerX" id="9qo-20-zUc"/>
+                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="leading" secondItem="IbH-ys-jQ7" secondAttribute="leading" id="Mr5-oY-aRH"/>
+                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="bottom" secondItem="IbH-ys-jQ7" secondAttribute="bottom" id="OP5-oh-tQW"/>
+                            <constraint firstItem="Mnr-yW-PVv" firstAttribute="top" secondItem="IbH-ys-jQ7" secondAttribute="top" id="eWq-C0-e4V"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Et0-NM-viF"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="mapView" destination="Mnr-yW-PVv" id="MoZ-Ff-zSe"/>
                         <segue destination="c3H-X7-Sd5" kind="show" id="trI-gX-w8V"/>
                         <segue destination="S8Z-kK-m7g" kind="show" id="8mz-SV-mQt"/>
                         <segue destination="CoG-2Q-D0c" kind="show" id="y3p-tC-Nbt"/>
@@ -181,26 +169,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VQ6-Ya-krv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434" y="-46"/>
+            <point key="canvasLocation" x="2563.0769230769229" y="-46.208530805687204"/>
         </scene>
-        <!--View Controller-->
+        <!--New DroneVC-->
         <scene sceneID="Mr0-fe-dg2">
             <objects>
-                <viewController id="kmC-Wa-XVk" sceneMemberID="viewController">
+                <viewController id="kmC-Wa-XVk" customClass="NewDroneVC" customModule="drone_tracking_system" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ih-BB-gBv">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Drone Serial Numbers" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MyU-9S-opS">
-                                <rect key="frame" x="16" y="191" width="358" height="34"/>
+                                <rect key="frame" x="16" y="147" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="DroneSNPlaceholder:" destination="LnR-ry-paf" eventType="editingDidEnd" id="qQ6-6s-ddV"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Drone Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hF0-lF-S5t">
-                                <rect key="frame" x="16" y="233" width="358" height="34"/>
+                                <rect key="frame" x="16" y="189" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -208,7 +193,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Added" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O1m-eL-ydt">
-                                <rect key="frame" x="16" y="275" width="358" height="34"/>
+                                <rect key="frame" x="16" y="231" width="358" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -216,11 +201,12 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbm-FV-EhV">
-                                <rect key="frame" x="141" y="337" width="108" height="35"/>
+                                <rect key="frame" x="141" y="293" width="108" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Save"/>
                                 <connections>
                                     <action selector="SaveButton:" destination="LnR-ry-paf" eventType="touchUpInside" id="IV9-8Y-Ph8"/>
+                                    <action selector="saveButton:" destination="kmC-Wa-XVk" eventType="touchUpInside" id="E1h-I3-PC6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -242,6 +228,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FN1-l2-IDL"/>
+                    <connections>
+                        <outlet property="dateAddedField" destination="O1m-eL-ydt" id="N9g-Tu-zxg"/>
+                        <outlet property="nameField" destination="hF0-lF-S5t" id="0Ro-N3-cjo"/>
+                        <outlet property="serialNumberField" destination="MyU-9S-opS" id="EaX-h0-b6g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D9e-Ej-yb1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="LnR-ry-paf" userLabel="Exit" sceneMemberID="exit"/>
@@ -253,7 +244,7 @@
             <objects>
                 <viewController id="CoG-2Q-D0c" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zAS-IC-cnb">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="xgq-5D-iwI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -262,14 +253,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLa-cB-3Ry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="631" y="675"/>
+            <point key="canvasLocation" x="1769" y="675"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RUY-pP-xZv">
             <objects>
                 <viewController id="S8Z-kK-m7g" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="npE-g4-BMe">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="cdr-d2-HUD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -278,14 +269,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwm-EK-vYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1434" y="675"/>
+            <point key="canvasLocation" x="2563" y="675"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="x2Y-zl-UT5">
             <objects>
                 <viewController id="c3H-X7-Sd5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9NR-WR-huO">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="W1N-wC-1oL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -294,7 +285,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RmZ-gF-oaH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2214" y="675"/>
+            <point key="canvasLocation" x="3338" y="675"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="QlI-Kv-Yy5">
@@ -316,10 +307,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info.circle" catalog="system" width="128" height="123"/>
-        <image name="info.circle.fill" catalog="system" width="128" height="123"/>
-        <image name="road.lanes" catalog="system" width="128" height="66"/>
-        <image name="wrench.and.screwdriver.fill" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

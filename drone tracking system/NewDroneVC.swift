@@ -8,24 +8,20 @@
 import UIKit
 
 class NewDroneVC: UIViewController {
-
-
+    
+    
+    @IBOutlet weak var serialNumberField: UITextField!
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var dateAddedField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
     }
-    @IBAction func DroneSNPlaceholder(_ sender: Any) {
-    }
-    
-    @IBAction func DroneNamePlaceholder(_ sender: Any) {
-    }
-    
-    @IBAction func DateAddPlaceholder(_ sender: Any) {
-    }
-    
-
-    @IBAction func SaveButton(_ sender: Any) {
+    @IBAction func saveButton(_ sender: Any) {
     }
     
 }
