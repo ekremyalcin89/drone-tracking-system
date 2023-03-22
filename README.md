@@ -6,5 +6,6 @@ Currently in development  App for Yolla Tech. Tracking drones in  fleet , destin
 * UIKit
 * MapKit
 * Core Locations
+* REST API
 
 
